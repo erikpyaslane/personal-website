@@ -24,8 +24,8 @@ const storage = multer.diskStorage({
   }
 });
 
-
-const client = new MongoClient(process.env.MONGODB_URL, {
+const uri = "mongodb+srv://erikpyaslane:tfxzxxkd8u@portfolio.4dktmad.mongodb.net/?retryWrites=true&w=majority"
+const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
     strict: true,
